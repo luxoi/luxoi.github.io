@@ -1,0 +1,101 @@
+
+html{
+    scroll-behavior: smooth;
+}
+/*------------------------------------------*/
+.header {
+    background-image: url(out1.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.img-logo{
+    width: 110px;
+}
+
+
+.vh-50{
+    height: 50vmin;
+}
+/*------------------------------------------*/
+.card-img-filter{
+    filter: brightness(0.5);
+    height: 400px;
+    border-radius: 6px
+}
+
+.card{
+    transition-duration: 0.6s;
+    clip-path:polygon(50% 0, 100% 0,100% 50%,100% 100%,50% 100%,0 100%,0 50%,0 0);
+}
+
+.card-effect:hover .card {
+    clip-path: polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%);
+}
+
+.card-img-overlay{
+    transition-duration: 0.6s;
+}
+
+
+.card-effect:hover .card-img-overlay {
+    transform: scale(0.9);
+}
+/*----------------SECTION COMMENTS-------------------*/
+.comments{
+    background-image: url(out..jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.comments__img{
+    --tamaño: 80px;
+    width: var(--tamaño);
+    height: var(--tamaño);
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 7px 7px 7px rgba(0 0 0 / 0.5);
+    border: 3px ridge #fff;
+}
+
+.transform-turn{
+    transform: rotate(.5turn);
+}
+
+
+
+
+
+/*----------------¨*/
+.media-object-img{
+    --tamaño: 65px;
+    width: var(--tamaño);
+    height: var(--tamaño);
+    margin-right: 15px;
+}
+
+/*----------------*/
+.carousel-inner{
+    background-color: #005978;
+}
+
+
+
+.carrusel-1{
+    height: 500px;
+   
+}
+/*-------mediaquerys---------*/
+@media screen and (max-width: 375px){
+    .vh-50{
+        height: 50vmax;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .vh-50{
+        height: 55vmax;
+    }
+}
